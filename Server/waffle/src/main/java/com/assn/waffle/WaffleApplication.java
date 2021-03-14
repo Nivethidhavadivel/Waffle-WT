@@ -1,4 +1,4 @@
-package com.waffle.waffle;
+package com.assn.waffle;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
