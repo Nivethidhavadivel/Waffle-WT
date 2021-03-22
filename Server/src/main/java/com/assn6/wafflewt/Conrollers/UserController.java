@@ -16,7 +16,7 @@ public class UserController {
     //add user
     @PostMapping("/addUser")
     public User addUser(@RequestBody User u){
-        //System.out.println(u.getBio());
+        System.out.println(u.getBio());
         return userRep.save(u);
     }
 
