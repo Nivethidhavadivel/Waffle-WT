@@ -1,5 +1,4 @@
 package com.assn6.wafflewt.Models;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
