@@ -9,7 +9,7 @@ class NoMatch extends Component{
         return(
             <div className="NoMatch">
                 <h1>Error 404</h1>
-                <h2>Please check your URL request</h2>
+                <h2>Please check your URL request :)</h2>
             </div>
         );
     }
