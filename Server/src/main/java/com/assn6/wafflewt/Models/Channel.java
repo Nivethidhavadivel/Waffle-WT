@@ -14,4 +14,5 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Channel {
     @Id
     private String name;
+    private String desc;
 }

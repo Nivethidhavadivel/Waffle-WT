@@ -15,5 +15,5 @@ public class User {
     private String username;
     private String bio;
     private String password;
-    private String eMail;
+    private String mail;
 }
