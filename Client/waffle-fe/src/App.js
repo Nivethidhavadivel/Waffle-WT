@@ -10,7 +10,7 @@ function App() {
         <Navbar bg="light" expand="lg">
           <h3 style={{color: "red"}}> WAFFLE </h3>
         </Navbar>
-        
+   
         <Routes/>
       </div>
     </Router>
