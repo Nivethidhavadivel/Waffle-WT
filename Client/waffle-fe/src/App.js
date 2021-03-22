@@ -5,7 +5,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1> WAFFLE </h1>
+        <h1> WAFFLE1 </h1>
         <Routes/>
       </div>
     </Router>
