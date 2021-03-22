@@ -1,10 +1,17 @@
 import React, { Component } from "react";
-import { Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
+import Home from "./Home.js";
+import ChannelSpace from "./ChannelSpace.js";
+import Login from "./Login";
+import Register from "./Register.js";
+import NewSpace from "./NewSpace";
+import UserProfile from "./UserProfile.js";
+import NoMatch from "./NoMatch";
 export default class Routes extends Component{
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
 
     render(){
         return (
@@ -29,6 +36,13 @@ export default class Routes extends Component{
                     () => <NewSpace/>
                 }/>
 
+                <Route path="/UserProfile" exact render = {
+                    () => <UserProfile/>
+                }/>
+
+                <Route path="*" exact render = {
+                    () => <NoMatch/>
+                }/>
                 
             </Switch>
         )

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 class ChannelSpace extends Component{
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
 
 
     render(){
@@ -14,3 +14,5 @@ class ChannelSpace extends Component{
         );
     }
 }
+
+export default ChannelSpace;

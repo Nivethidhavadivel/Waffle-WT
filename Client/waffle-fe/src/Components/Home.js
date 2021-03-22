@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class Home extends component{
-    constructor(props){
-        super(props);
-    }
+class Home extends Component{
+    // constructor(props){
+    //     super(props);
+    // }
 
     render(){
         return(
