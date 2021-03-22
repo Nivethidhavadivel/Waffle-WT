@@ -23,6 +23,7 @@ public class UserController {
     @GetMapping("/checkPassword/{mail}")
     public String getUser(@PathVariable String mail){
         User p = userRep.findByMail(mail);
+        System.out.println(p.getPassword());
         return p.getPassword();
     }
 }

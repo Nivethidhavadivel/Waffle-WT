@@ -16,7 +16,7 @@ export default class Routes extends Component{
     render(){
         return (
             <Switch>
-                <Route path="/" exact render = {
+                <Route exact path="/" exact render = {
                     () => <Home/>
                 }/>
 

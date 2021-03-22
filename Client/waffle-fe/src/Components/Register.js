@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import UserService from "../Services/UserService.js";
-import { useHistory } from "react-router-dom";
+import history from "./history.js";
 class Register extends Component{
     constructor(props){
         super(props);
@@ -32,10 +32,7 @@ class Register extends Component{
     regUser=(e)=>{
         e.preventDefault();
         let user={username:this.state.username,bio:this.state.bio,password:this.state.password,mail:this.state.mail};
-        UserService.addUser(user).then(res=>{
-            // const history = useHistory();
-            // history.push("/home");
-        });
+        UserService.addUser(user).then(() => history.push('/'));
 
         console.log(JSON.stringify(user));
         /*this.setState({username:''});

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-
+import history from "./history.js";
 class Home extends Component{
-    // constructor(props){
-    //     super(props);
-    // }
+    constructor(props){
+        super(props);
+        this.forceUpdate();
+    }
 
     render(){
         return(
