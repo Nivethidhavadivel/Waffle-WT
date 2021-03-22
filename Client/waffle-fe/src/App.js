@@ -7,14 +7,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-<<<<<<< HEAD
         <Main/>
-=======
-        <Navbar bg="light" expand="lg">
-          <h3 style={{color: "red"}}> WAFFLE </h3>
-        </Navbar>
    
->>>>>>> 1ea77a41c71a7eeed524ff9602f11da953652ffe
         <Routes/>
       </div>
     </Router>
