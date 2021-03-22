@@ -14,7 +14,7 @@ export default class Routes extends Component{
                 }/>
 
                 <Route path="/ChannelSpace/:channel" exact render = {
-                    () => <Home/>
+                    () => <ChannelSpace/>
                 }/>
 
                 <Route path="/Login" exact render = {
