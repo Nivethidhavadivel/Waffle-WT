@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import {Navbar, NavLink, NavItem, Button, Link, Nav} from 'react-bootstrap'
+import history from "./history.js";
+
 class Main extends Component{
     constructor(props){
         super(props);
@@ -13,9 +15,15 @@ class Main extends Component{
             <div className="Main">
                 <Navbar bg="light" expand="lg">
                     <Nav className="mr-auto" navbar>
+                        
+                        <a href = "/">
+                            <h2 style={{color: "red"}}> WAFFLE </h2>{' '}
+                        </a>
+                        
                         <NavItem>
-                        <h3 style={{color: "red"}}> WAFFLE </h3>{' '}
+                            <NavLink href = "/AddPost"> <h3> ADD_POST </h3></NavLink>
                         </NavItem>
+
                     </Nav>
                     
                     <NavItem>
