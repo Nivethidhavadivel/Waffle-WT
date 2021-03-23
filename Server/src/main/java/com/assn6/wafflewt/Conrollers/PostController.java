@@ -24,4 +24,7 @@ public class PostController {
     public List<Post> getPost(@PathVariable String channel){
         return postRepo.findByChannel(channel);
     }
+
+    @GetMapping("/posts")
+    public List<Post> allPosts(){return postRepo.findAll();}
 }

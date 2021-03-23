@@ -9,6 +9,9 @@ class PostService{
     getPosts(channel){
         return axios.get(POST_API_URL+'/getPosts/'+channel);
     }
+    allPosts(){
+        return axios.get(POST_API_URL+'/posts');
+    }
 }
 
 export default new PostService()

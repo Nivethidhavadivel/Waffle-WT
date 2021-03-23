@@ -17,11 +17,18 @@ class Main extends Component{
                     <Nav className="mr-auto" navbar>
                         
                         <a href = "/">
-                            <h2 style={{color: "red"}}> WAFFLE </h2>{' '}
+                            <NavItem style={{color: "red"}}> WAFFLE </NavItem>{' '}
                         </a>
+                        <NavItem> . </NavItem>
+
+                        <NavItem>
+                            <a href = "/AddPost">  ADD_POST </a>
+                        </NavItem>
+
+                        <NavItem> . </NavItem>
                         
                         <NavItem>
-                            <NavLink href = "/AddPost"> <h3> ADD_POST </h3></NavLink>
+                            <a href = "/AllPosts">  ALL_POSTS </a>
                         </NavItem>
 
                     </Nav>

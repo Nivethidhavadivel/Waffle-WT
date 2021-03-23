@@ -9,6 +9,7 @@ import NewSpace from "./NewSpace";
 import UserProfile from "./UserProfile.js";
 import NoMatch from "./NoMatch";
 import AddPost from "./AddPost";
+import AllPosts from "./AllPosts.js";
 export default class Routes extends Component{
     constructor(props){
         super(props);
@@ -53,6 +54,10 @@ export default class Routes extends Component{
 
                 <Route path="/AddPost" exact render = {
                     () => <AddPost/>
+                }/>
+
+                <Route path="/AllPosts" exact render = {
+                    () => <AllPosts/>
                 }/>
 
                 <Route path="*" exact render = {

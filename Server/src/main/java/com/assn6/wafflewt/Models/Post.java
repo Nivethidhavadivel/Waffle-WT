@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Post {
+    private String title;
     private String username;
     private String data;
     private String channel;
