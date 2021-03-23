@@ -5,12 +5,16 @@ class AddPost extends Component{
     constructor(props) {
         super(props);
         this.handleTitleChange = this.handleTitleChange.bind(this);
-        this.handleSubjecChange = this.handleSubjectChange.bind(this);
+        this.handleSubjectChange = this.handleSubjectChange.bind(this);
         this.state = {
+            uname:'',
+            channel:'',
           title:'',
           subject:''
         };
         this.addPosts=this.addPosts.bind(this);
+        this.handleUnameChange=this.handleUnameChange.bind(this);
+        this.handleChannelChange=this.handleChannelChange.bind(this);
       }
 
     handleTitleChange=(event)=>{
@@ -19,12 +23,19 @@ class AddPost extends Component{
     handleSubjectChange=(event)=>{
         this.setState({subject:event.target.value})
     }
+    handleUnameChange=(event)=>{
+        this.setState({uname:event.target.value})
+    }
+    handleChannelChange=(event)=>{
+        this.setState({channel:event.target.value})
+    }
     addPosts=(e)=>{
         e.preventDefault();
-        let post={title:this.state.title,data:this.state.subject};
+        let post={title:this.state.title,data:this.state.subject,username:this.state.uname,channel:this.state.channel};
         PostService.addPost(post).then(res=>{
             alert `Posted!`
             history.push('/');
+            console.log(post);
         });
     }
 
@@ -37,12 +48,13 @@ class AddPost extends Component{
                 <div style={{width:'40%', align:'center'}}>
                     <form>
                     <div className="form-group">
-                            <input type="text" value={this.state.username} onChange={this.handleUnameChange} className="form-control" id="uname" name="t" placeholder="Title" required />
+                            <input type="text" value={this.state.username} onChange={this.handleUnameChange} className="form-control" id="uname" name="uname" placeholder="Username" required />
                         </div>
-        
+                  
                         <div className="form-group">
-                            <textarea className="form-control" value={this.state.channel} onChange={this.handleChannelChange} type="textarea" id="subject" placeholder="Subject" maxlength="140" rows="7"></textarea>
+                            <input type="text" value={this.state.channel} onChange={this.handleChannelChange} className="form-control" id="channel" name="channel" placeholder="Channel" required />
                         </div>
+                       
                         <div className="form-group">
                             <input type="text" value={this.state.title} onChange={this.handleTitleChange} className="form-control" id="title" name="title" placeholder="Title" required />
                         </div>

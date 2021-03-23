@@ -10,6 +10,7 @@ import UserProfile from "./UserProfile.js";
 import NoMatch from "./NoMatch";
 import AddPost from "./AddPost";
 import AllPosts from "./AllPosts.js";
+import AddChannel from "./AddChannel.js";
 export default class Routes extends Component{
     constructor(props){
         super(props);
@@ -54,6 +55,10 @@ export default class Routes extends Component{
 
                 <Route path="/AddPost" exact render = {
                     () => <AddPost/>
+                }/>
+
+                <Route path="/AddChannel" exact render = {
+                    () => <AddChannel/>
                 }/>
 
                 <Route path="/AllPosts" exact render = {

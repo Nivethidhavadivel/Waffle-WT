@@ -27,19 +27,20 @@ class AllPosts extends Component{
         const displayData = this.state.isLoading === false ? (
             this.state.posts !==null ? (this.state.posts.map((k) => {
                      return(
-                        <Link to={`/ChannelSpace/${k.name}`}>
+                        <Link to={`/ChannelSpace/${k.channel}`}>
                             <Card bg = "dark" border="primary" style={{ width: '18rem' }}>
-                                <Card.Header>{k.title}</Card.Header>
+                                <Card.Header>{k.username}</Card.Header>
                                 <Card.Body>
-                                <Card.Title>{k.username}</Card.Title>
-                                
-                                <Card.Text>
-                                    {k.data}
-                                </Card.Text>
+                                    <Card.Title>{k.title}</Card.Title>
+                                    
+                                    <Card.Text>
+                                        {k.channel} <br/>
+                                        {k.data}
+                                    </Card.Text>
 
                                 </Card.Body>
                             </Card>
-                            <br/><br/>
+                            <br/>
                         </Link>
                         
                      );

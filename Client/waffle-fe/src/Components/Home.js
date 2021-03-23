@@ -39,7 +39,7 @@ class Home extends Component{
                                     of the card's content.
                                 </Card.Text> */}
                                 </Card.Body>
-                            </Card>
+                            </Card><br/>
                         </Link>
                         
                      );

@@ -31,6 +31,11 @@ class Main extends Component{
                             <a href = "/AllPosts">  ALL_POSTS </a>
                         </NavItem>
 
+                        <NavItem> . </NavItem>
+                        <NavItem>
+                            <a href = "/AddChannel">  ADD_CHANNEL </a>
+                        </NavItem>
+
                     </Nav>
                     
                     <NavItem>
